@@ -1,0 +1,16 @@
+// risovat liniju
+float plotPow(float x, float fy){
+  return  smoothstep( pct-0.02, pct, st) -
+          smoothstep( pct, pct+0.02, st);
+}
+
+float fy = plotPow(uv.x, 0.); 
+//********************** */
+
+//random
+
+float random (vec2 st) {
+    return fract(sin(dot(st.xy,
+                         vec2(12.9898,78.233)))*
+        43758.5453123);
+}
